@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<footer class="footer">
+    <div class="container">
+    <div class="row">
+        <div class="footer-col">
+        <h4>Quick Links</h4>
+    <ul>
+             <li><a href="# ">About Us</a></li>
+            <li> <a href="#">Legal Notice</a></li>
+             <li><a href="#">Terms and Conditions</a></li>
+             <li><a href="#">Privacy policy</a></li>
+    </ul>
+    </div>
+
+    <div class="footer-col">
+         <h4>Get Help</h4>
+<ul>
+        <li> <a href="#">FAQ's</a></li>
+       <li><a href="#">Return Policy</a></li>
+         <li><a href="#">shipping Policy</a></li>
+         <li><a href="#">Order Status</a></li>
+        <li> <a href="#">Payment options</a></li>
+
+</ul>
+
+    </div>
+    
+    <div class="footer-col">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.github.com/" class="fa fa-github"></a>
+        
+    </div>
+    <div class="footer-col">
+          <h4>Contact Us</h4>
+          <mat-icon> phone</mat-icon><p>9701733165</p>
+          <mat-icon> mail_outline</mat-icon><p>m.rishireddy1819@gmail.com</p>
+          <mat-icon> location_on</mat-icon><p>Vaishnavi Apartment No: 403, Vidhyanagar colony, Armoor.</p>
+          <mat-icon> message</mat-icon><p style="text-decoration: underline;">Contact Form</p>
+    </div>
+    <div class="footer-col">
+            <h4>Subscribe to Our News Letter</h4>
+            <input class="form-control" [class.is-invalid]="email.invalid && email.touched" #email= 'ngModel' [(ngModel)]= 'userModel.email' 
+            type="text" placeholder="Enter your Email" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <div *ngIf="email.errors && (email.invalid || email.touched)">
+                
+                <small class="text-danger" *ngIf="email.errors.pattern">Email Invalid</small>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+    </div>
+    
+    </div>
+    </div>
+
+    <div class="tag-line">
+        <p><mat-icon>copyright</mat-icon>1996-2021, CHEERS, Inc or its affiliates</p>
+    </div>
+    
+</footer>
